@@ -312,9 +312,11 @@ public class Main {
 		content = new Text(shell, SWT.MULTI | SWT.BORDER_SOLID | SWT.H_SCROLL | SWT.V_SCROLL);
 		content.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
 		content.addModifyListener(_ -> {
-			String text = shell.getText();
-			if (!text.startsWith("• ")) {
-				shell.setText("• " + shell.getText());
+			if (journal != null) {
+				String text = shell.getText();
+				if (!text.startsWith("• ")) {
+					shell.setText("• " + shell.getText());
+				}
 			}
 		});
 
