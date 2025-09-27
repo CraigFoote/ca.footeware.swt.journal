@@ -15,9 +15,9 @@
   
   	<dependencies>
   		<dependency>
-    		<groupId>org.eclipse.swt</groupId>
-    		<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
-    		<version>4.3</version>
+		    <groupId>org.eclipse.platform</groupId>
+		    <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+		    <version>3.131.0</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
